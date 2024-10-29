@@ -983,20 +983,21 @@ Policy to permit autoplay on a cross-origin iframe has not been set.
 For complete details, refer to browser-specific policies (Apple Safari / Webkit, Google 
 Chrome, Mozilla Firefox) and Mozilla's autoplay guide.
 
-Examples
-Creating YT.Player objects
+<h3>Examples</h3>
+<h3>Creating YT.Player objects</h3>
 
-Example 1: Use API with existing <iframe>
+<h4>Example 1: Use API with existing &lt;iframe&gt;</h4>
 
-In this example, an <iframe> element on the page already defines the player with which the 
+In this example, an &lt;iframe&gt; element on the page already defines the player with which the 
 API will be used. Note that either the player's src URL must set the enablejsapi parameter 
-to 1 or the <iframe> element's enablejsapi attribute must be set to true.
+to 1 or the &lt;iframe&gt; element's enablejsapi attribute must be set to true.
 
 The onPlayerReady function changes the color of the border around the player to orange when 
 the player is ready. The onPlayerStateChange function then changes the color of the border 
 around the player based on the current player status. For example, the color is green when 
 the player is playing, red when paused, blue when buffering, and so forth.
 
+<!-- video here -->
 
 This example uses the following code:
 
@@ -1052,7 +1053,7 @@ This example uses the following code:
 </script>
 </pre>
 
-Example 2: Loud playback
+<h4>Example 2: Loud playback</h4>
 
 This example creates a 1280px by 720px video player. The event listener for the onReady 
 event then calls the setVolume function to adjust the volume to the highest setting.
@@ -1078,9 +1079,9 @@ function onPlayerReady(event) {
 }
 </pre>
 
-Example 3: This example sets player parameters to automatically play the video when it 
+<p><b>Example 3</b>: This example sets player parameters to automatically play the video when it 
 loads and to hide the video player's controls. It also adds event listeners for several 
-events that the API broadcasts.
+events that the API broadcasts.</p>
 
 <pre>
 function onYouTubeIframeAPIReady() {
@@ -1097,9 +1098,10 @@ function onYouTubeIframeAPIReady() {
 }
 </pre>
 
-Controlling 360° videos
+<h3>Controlling 360° videos</h3>
+<!-- video here https://youtu.be/FAtdv94yzp4 -->
 
-This example uses the following code:
+<p>This example uses the following code:</p>
 
 <pre>
 <style>
@@ -1202,7 +1204,8 @@ This example uses the following code:
 </script>
 </pre>
 
-Android WebView Media Integrity API integration
+<h4>Android WebView Media Integrity API integration</h4>
+
 YouTube has extended the Android WebView Media Integrity API to enable embedded media 
 players, including YouTube player embeds in Android applications, to verify the 
 embedding app's authenticity. With this change, embedding apps automatically send an 
@@ -1215,7 +1218,7 @@ not shared with third parties, and deleted following a fixed retention period. A
 developers can configure their app identity in the WebView Media Integrity API. The 
 configuration supports an opt-out option.
 
-Revision history
+<h4>Revision history</h4>
 June 24, 2024
 The documentation has been updated to note that YouTube has extended the Android 
 WebView Media Integrity API to enable embedded media players, including YouTube 
