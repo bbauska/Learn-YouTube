@@ -599,6 +599,7 @@ yaw	See definition above.
 pitch	See definition above.
 roll	See definition above.
 fov	See definition above.
+
 enableOrientationSensor	
 Note: This property affects the 360° viewing experience on supported devices only.
 A boolean value that indicates whether the IFrame embed should respond to events that 
@@ -617,9 +618,7 @@ Unsupported mobile devices
 The enableOrientationSensor property value does not have any effect on the playback experience.
 
 Playing a video in a playlist
-<pre>
-player.nextVideo():Void
-</pre>
+<pre>player.nextVideo():Void</pre>
 
 This function loads and plays the next video in the playlist.
 If player.nextVideo() is called while the last video in the playlist is being watched, and 
@@ -628,9 +627,9 @@ first video in the list.
 
 If player.nextVideo() is called while the last video in the playlist is being watched, and 
 the playlist is not set to play continuously, then playback will end.
-<pre>
-player.previousVideo():Void
-</pre>
+
+<pre>player.previousVideo():Void</pre>
+
 This function loads and plays the previous video in the playlist.
 If player.previousVideo() is called while the first video in the playlist is being 
 watched, and the playlist is set to play continuously (loop), then the player will 
@@ -639,9 +638,9 @@ load and play the last video in the list.
 If player.previousVideo() is called while the first video in the playlist is being 
 watched, and the playlist is not set to play continuously, then the player will 
 restart the first playlist video from the beginning.
-<pre>
-player.playVideoAt(index:Number):Void
-</pre>
+
+<pre>player.playVideoAt(index:Number):Void</pre>
+
 This function loads and plays the specified video in the playlist.
 The required index parameter specifies the index of the video that you want to play in 
 the playlist. The parameter uses a zero-based index, so a value of 0 identifies the 
@@ -1103,7 +1102,7 @@ function onYouTubeIframeAPIReady() {
 
 <p>This example uses the following code:</p>
 
-<pre>
+```
 <style>
   .current-values {
     color: #666;
@@ -1202,7 +1201,7 @@ function onYouTubeIframeAPIReady() {
     ytplayer.setSphericalProperties(sphericalProperties);
   }
 </script>
-</pre>
+```
 
 <h4>Android WebView Media Integrity API integration</h4>
 
